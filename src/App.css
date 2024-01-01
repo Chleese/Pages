@@ -52,3 +52,24 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Menu.css */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  margin: 10px;
+  color: #949494;
+  font-size: 0.8em;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+}

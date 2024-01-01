@@ -1,7 +1,7 @@
 import logo from "./logo-icon.png";
 import name from "./Chleese.png";
 import "./App.css";
-
+import Menu from "./Component/Menu.tsx";
 function App() {
   return (
     <div className='App'>
@@ -10,13 +10,14 @@ function App() {
           <img src={logo} className='App-logo' alt='logo' />
           <img src={name} className='logo-title' alt='title' />
         </div>
-        <a
+        <Menu />
+        {/* <a
           className='App-link'
           href='https://reactjs.org'
           target='_blank'
           rel='noopener noreferrer'>
           Learn React
-        </a>
+        </a> */}
       </header>
       <div></div>
     </div>
