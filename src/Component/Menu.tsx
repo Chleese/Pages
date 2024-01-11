@@ -1,22 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Menu() {
+  const activeStyle = { color: "#424242", fontWeight: "bold" };
   return (
     <div className='menu'>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/projects'>Projects</Link>
-          </li>
-          <li>
-            <Link to='/about'>About Me</Link>
-          </li>
-        </ul>
-      </nav>
+      <ul>
+        <li>
+          <NavLink
+            to='/'
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/projects'
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/about'
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+            About Me
+          </NavLink>
+        </li>
+      </ul>
     </div>
   );
 }

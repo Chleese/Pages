@@ -16,7 +16,7 @@
 
 .App-header {
   background-color: #fff;
-  min-height: 50vh;
+  min-height: 6vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -56,20 +56,26 @@
 /* Menu.css */
 .menu {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 20px;
   margin: 10px;
-  color: #949494;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
-.menu nav ul {
+.menu ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
 }
 
-.menu nav ul li {
-  display: inline;
-  margin-left: 25px;
+.menu ul li a {
+  display: inline-block;
+  padding: 0 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: #949494;
+}
+
+.menu ul li a:hover {
+  color: #f7c946;
 }
